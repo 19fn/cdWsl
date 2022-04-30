@@ -21,4 +21,5 @@ $LINUX_DISTRIBUTION_VERSION="your-awesome-linux-distro"
 ### Run cdWsl.ps1
 It's a good idea to inspect the cdWsl script. You can look through it so everything looks normal, then you should right click on it and choose `"Run with PowerShell"` as shown in the image below.
 
-![image](https://user-images.githubusercontent.com/69449278/166087256-f6e42fa6-17e4-48f7-99a0-f70ca44ff87c.png)
+![image](https://user-images.githubusercontent.com/69449278/166087334-64a24ba3-d085-4531-b9dd-379cacc5640e.png)
+
