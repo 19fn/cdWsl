@@ -8,6 +8,14 @@
 
 ## Using cdWsl
 
+### Change ExecutionPolicy
+You should change the Execution Policy to set the policy to `RemoteSigned` in PowerShell.
+```sh
+Set-ExecutionPolicy RemoteSigned
+#  Type Get-ExecutionPolicy to verify the current settings for the execution policy.
+Get-ExecutionPolicy
+```
+
 ### Change Linux distro version
 You should change the `LINUX_DISTRIBUTION_VERSION` variable to the one you actually have.
 ```sh
