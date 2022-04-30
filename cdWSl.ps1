@@ -5,15 +5,15 @@
 # If a least one folder is in \\wsl$\Ubuntu-{version}\home\* path
 # then, the script will change to that folder and will open the
 # explorer.exe in the current working directory.
-# Remember to change 'VM_VERSION' variable if you choose another
-# Linux distro or version.   
+# Remember to change 'LINUX_DISTRIBUTION_VERSION' variable if you 
+# choose another Linux distro or version.   
 #################################################################
 #################################################################
 
 # CHANGE THIS
-$VM_VERSION="Ubuntu-20.04"
+$LINUX_DISTRIBUTION_VERSION="Ubuntu-20.04"
 
-$TARGET = "Microsoft.PowerShell.Core\FileSystem::\\wsl$\$VM_VERSION\home\*[0-9-aA-zZ]"
+$TARGET = "Microsoft.PowerShell.Core\FileSystem::\\wsl$\$LINUX_DISTRIBUTION_VERSION\home\*[0-9-aA-zZ]"
 $Folder = Get-ChildItem $TARGET | Select -first 1
 
 If ($Folder) 
